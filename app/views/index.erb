@@ -1,6 +1,7 @@
 <div class="container">
-  <h1>Tweets</h1>
-    <% @tweets.each do |each|%>
-    <%= each.text%><br><br>
-    <%end%>
+	<h1>Welcome to ReTwitter</h1>
+	<form id='t_form' action='/tweet' method='post'>
+		<input id='t_box' type='text' name='tweet' placeholder='Insert Tweet'>
+		<input id='t_button'type='submit' value='Tweet'>
+	</form>
 </div>

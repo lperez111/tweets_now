@@ -1,9 +1,22 @@
+body{
+	background-image:url('http://www.digitaltrends.com/wp-content/uploads/2012/03/twitter.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+}
+
 .container {
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  text-align: center;
 }
+
 th {
   text-align: left;
+}
+
+input{
+	color: white;
+	background-color: black;
 }

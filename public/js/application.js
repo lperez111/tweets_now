@@ -1,7 +1,11 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
-
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+	$('#t_button').click(function(event){
+		event.preventDefault();
+		var tweet = $('#t_box').val()
+		var data = {my_tweet: tweet}
+		$.post('/hey', data, function(response){
+			$('.container').after(response)
+			$('#t_box').val("")
+		});
+	});
 });
